@@ -91,8 +91,8 @@ CREATE TABLE `itpk_renewal` (
 	`id` INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
 	`name` VARCHAR(16) NOT NULL,
 	`day_time` INT NOT NULL,
-	`gold INT` NOT NULL,
-	`sort INT` NOT NULL DEFAULT 0,
+	`gold` INT NOT NULL,
+	`sort` INT NOT NULL DEFAULT 0,
 	`createdate` INT NOT NULL
 ) ENGINE = MyISAM DEFAULT CHARSET = utf8 COLLATE utf8_general_ci;
 
