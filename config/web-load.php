@@ -54,7 +54,8 @@ function __autoload($className) {
 			$folder = explode("Cron", $folder[1]);
 			$folder = PLUGIN_FOLDER . strtolower($folder[0]) . "/";
 		} else {
-			$folder = PLUGIN_FOLDER . strtolower(explode("Plugin", $className)[1]) . "/";
+			$folder = explode("Plugin", $className);
+			$folder = PLUGIN_FOLDER . strtolower($folder[1]) . "/";
 		}
 	}
 
