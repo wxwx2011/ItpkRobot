@@ -12,7 +12,7 @@ class ReplyUtil {
 	private $sleepArray = array();
 
 	/**
-	 * 插入回复内容，回复此条消息后再回复下一条消息的休眠时间（最后一条消息的休眠时间请设置为0，休眠时间单位为秒）
+	 * 插入回复内容，回复此条消息后再回复下一条消息的休眠时间（最后一条消息的休眠时间无效，休眠时间单位为秒）
 	 * @param string $content
 	 * @param number $sleep
 	 */
