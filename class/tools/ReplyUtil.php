@@ -1,4 +1,4 @@
-<?php 
+<?php if (!defined('ITPK')) exit('You can not directly access the file.');
 
 /**
  * 回复工具类

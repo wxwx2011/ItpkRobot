@@ -1,4 +1,4 @@
-<?php 
+<?php if (!defined('ITPK')) exit('You can not directly access the file.');
 
 /**
  * 替换UBB代码和表情
