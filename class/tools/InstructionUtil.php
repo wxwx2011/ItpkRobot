@@ -1,7 +1,7 @@
 <?php if (!defined('ITPK')) exit('You can not directly access the file.');
 
 /**
- * 判断插件
+ * 判断插件指令的类型
  * @author 冬天的秘密
  * @link http://bbs.itpk.cn
  * @version 1.0
