@@ -25,7 +25,8 @@ $start_time = time();
 /**
  * 访问计划任务程序激活它
  */
-$ch = curl_init(ITPK_ROOT_URL . "cron/task.php");
+$ch = curl_init(ITPK_ROOT_URL_LOCAL . "cron/task.php");
+curl_setopt($ch, CURLOPT_HTTPHEADER, array("Host: {$_SERVER['HTTP_HOST']}"));
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 0);
 curl_setopt($ch, CURLOPT_TIMEOUT, TASK_TIMEOUT);
