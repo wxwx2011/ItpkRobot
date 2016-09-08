@@ -45,7 +45,7 @@ require_once ITPK_ROOT . 'config/db-config.php';
 /**
  * 当前访问地址的根目录url
  */
-define('ITPK_ROOT_URL', (isHttps() ? "https://" : "http://") . dirname($_SERVER['SERVER_NAME'] . $_SERVER["REQUEST_URI"]) . "/");
+define('ITPK_ROOT_URL', (isHttps() ? "https://" : "http://") . $_SERVER['SERVER_NAME'] . dirname($_SERVER["REQUEST_URI"]) . "/");
 
 /**
  * 当前访问地址的根目录url（用本地IP127.0.0.1代替服务器的IP或绑定的域名，用于本地回路访问）
